@@ -51,10 +51,10 @@ const About = () => {
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
-                      target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
                       href={resume}
+                      download="resume"
                     >
                       Resume
                     </a>
