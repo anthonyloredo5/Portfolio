@@ -1,15 +1,13 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import { Button } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import PortfolioContext from '../../context/context';
-import GithubButtons from '../GithubButtons/GithubButtons';
-
-import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
-  const { isEnabled } = githubButtons;
 
   return (
     <footer className="footer navbar-static-bottom">
@@ -19,22 +17,23 @@ const Footer = () => {
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
-        <div className="social-links">
-          {networks &&
-            networks.map((network) => {
-              const { id, name, url } = network;
-              return (
-                <a
-                  key={id}
-                  href={url || ''}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  aria-label={name}
-                >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
-                </a>
-              );
-            })}
+        <div>
+          <Button
+            href="https://github.com/anthonyloredo5"
+            style={{ color: 'white' }}
+            size="small"
+            target="_blank"
+          >
+            <GitHubIcon fontSize="large" />
+          </Button>
+          <Button
+            href="https://www.linkedin.com/in/anthony-loredo-27805a18a/"
+            style={{ color: 'white' }}
+            size="small"
+            target="_blank"
+          >
+            <LinkedInIcon fontSize="large" />
+          </Button>
         </div>
         <hr />
         <p className="footer__text">
@@ -43,8 +42,6 @@ const Footer = () => {
             Anthony Loredo
           </a>
         </p>
-
-        
       </Container>
     </footer>
   );

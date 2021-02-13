@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'Anthony Loredo',
-  subtitle: 'Full Stack Developer',
+  subtitle: 'Full Stack Engineer',
   cta: '',
 };
 
@@ -30,7 +30,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'BeachinIt.png',
     title: `Beachin' It`,
-    info: 'This application is designed to simplify finding a relaxing beach anywhere in Florida! Functionality includes: access to Google Maps location data for finding your beach, tide data for each location, input parameters based desired activities, and also lists nearby attractions/restaurants.',
+    info:
+      'This application is designed to simplify finding a relaxing beach anywhere in Florida! Functionality includes: access to Google Maps location data for finding your beach, tide data for each location, input parameters based desired activities, and also lists nearby attractions/restaurants.',
     info2: '',
     url: '',
     repo: 'https://github.com/anthonyloredo5/Beachin-It', // if no repo, the button will not show up
@@ -39,7 +40,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'ohMyGift.png',
     title: 'Oh My Gift',
-    info: 'Oh My Gift is a procrastinators best friend. This application will take user input such as person, category, and price range to return a gift to the users specification. This was built with a team and I was primarily responsible for the backend development. Those responsibilites included setting up the database and querying for specific data, then appending it to the page with the help of handlebars.',
+    info:
+      'Oh My Gift is a procrastinators best friend. This application will take user input such as person, category, and price range to return a gift to the users specification. This was built with a team and I was primarily responsible for the backend development. Those responsibilites included setting up the database and querying for specific data, then appending it to the page with the help of handlebars.',
     info2: '',
     url: 'https://peaceful-depths-70768.herokuapp.com/',
     repo: 'https://github.com/anthonyloredo5/Oh-My-Gift', // if no repo, the button will not show up
